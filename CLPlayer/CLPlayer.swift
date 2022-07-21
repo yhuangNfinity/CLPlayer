@@ -18,9 +18,9 @@ extension CLPlayer {
 }
 
 public class CLPlayer: UIView {
-    public init(frame: CGRect = .zero, configure: ((inout CLPlayerConfigure) -> Void)? = nil) {
+    public init(frame: CGRect = .zero, config: ((inout CLPlayerConfigure) -> Void)? = nil) {
         super.init(frame: frame)
-        configure?(&config)
+        config?(&self.config)
         updateConfig()
         initUI()
         makeConstraints()
@@ -362,6 +362,7 @@ private extension CLPlayer {
             self.contentView.screenState = .small
         })
         fullScreenController = nil
+        UIViewController.attemptRotationToDeviceOrientation()
     }
 
     func presentWithOrientation(_ orientation: CLAnimationTransitioning.CLAnimationOrientation) {
@@ -378,6 +379,7 @@ private extension CLPlayer {
         fullScreenController?.modalPresentationStyle = .fullScreen
         rootViewController.present(fullScreenController!, animated: true, completion: {
             self.contentView.screenState = .fullScreen
+            UIViewController.attemptRotationToDeviceOrientation()
         })
     }
 }

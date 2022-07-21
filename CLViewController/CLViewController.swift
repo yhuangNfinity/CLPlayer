@@ -19,7 +19,10 @@ class CLViewController: CLController {
     }
 
     private lazy var player: CLPlayer = {
-        let view = CLPlayer(frame: CGRect(x: 0, y: UIApplication.shared.statusBarFrame.size.height + navigationBarHeight + 50, width: view.bounds.width, height: view.bounds.width / (16.0 / 9.0)))
+        let view = CLPlayer(frame: CGRect(x: 0, y: UIApplication.shared.statusBarFrame.size.height + navigationBarHeight + 50, width: view.bounds.width, height: view.bounds.width / (16.0 / 9.0))) { config in
+            config.topBarHiddenStyle = .never
+        }
+
         return view
     }()
 

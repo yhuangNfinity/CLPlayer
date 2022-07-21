@@ -26,23 +26,23 @@ public struct CLPlayerConfigure {
     /// 是否显示更多面板
     public var isShowMorePanel = true
     /// 顶部工具条隐藏风格
-    public var topBarHiddenStyle: CLPlayerTopBarHiddenStyle = .onlySmall
+    public var topBarHiddenStyle = CLPlayerTopBarHiddenStyle.onlySmall
     /// 工具条自动消失时间
-    public var autoFadeOut: TimeInterval = 8
+    public var autoFadeOut = 8.0
     /// 默认拉伸方式
-    public var videoGravity: AVLayerVideoGravity = .resizeAspectFill
+    public var videoGravity = AVLayerVideoGravity.resizeAspectFill
     /// 顶部工具条背景颜色
-    public var topToobarBackgroundColor: UIColor = .black.withAlphaComponent(0.6)
+    public var topToobarBackgroundColor = UIColor.black.withAlphaComponent(0.6)
     /// 底部工具条背景颜色
-    public var bottomToolbarBackgroundColor: UIColor = .black.withAlphaComponent(0.6)
+    public var bottomToolbarBackgroundColor = UIColor.black.withAlphaComponent(0.6)
     /// 进度条背景颜色
-    public var progressBackgroundColor: UIColor = .white.withAlphaComponent(0.35)
+    public var progressBackgroundColor = UIColor.white.withAlphaComponent(0.35)
     /// 缓冲条缓冲进度颜色
-    public var progressBufferColor: UIColor = .white.withAlphaComponent(0.5)
+    public var progressBufferColor = UIColor.white.withAlphaComponent(0.5)
     /// 进度条播放完成颜色
-    public var progressFinishedColor: UIColor = .white
+    public var progressFinishedColor = UIColor.white
     /// 转子背景颜色
-    public var loadingBackgroundColor: UIColor = .white
+    public var loadingBackgroundColor = UIColor.white
     /// 返回按钮图片
     public var backImage: UIImage?
     /// 更多按钮图片
