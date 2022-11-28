@@ -22,6 +22,6 @@ let package = Package(
     targets: [
         .target(
             name: "CLPlayer",
-            dependencies: [])
+            dependencies: [.product(name: "SnapKit", package: "SnapKit")])
     ]
 )
