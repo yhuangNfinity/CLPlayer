@@ -8,20 +8,12 @@ let package = Package(
         .iOS(.v10)
     ],
     products: [
-        .library(
-            name: "CLPlayer",
-            targets: ["CLPlayer"]
-        ),
+        .library(name: "CLPlayer", targets: ["CLPlayer"]),
     ],
     dependencies: [
-        .package(
-      name: "SnapKit",
-      url: "https://github.com/SnapKit/SnapKit",
-      "5.0.0" ..< "6.0.0"),
+        .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.6.0")),
     ],
     targets: [
-        .target(
-            name: "CLPlayer",
-            dependencies: [.product(name: "SnapKit", package: "SnapKit")])
+        .target(name: "CLPlayer", dependencies: ["SnapKit"]),
     ]
 )
