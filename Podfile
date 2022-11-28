@@ -7,7 +7,6 @@ install! 'cocoapods', :deterministic_uuids => false
 
 target 'CLPlayer' do
     inhibit_all_warnings!
-    pod 'SnapKit'
     pod 'SwiftFormat/CLI'
 end
 
