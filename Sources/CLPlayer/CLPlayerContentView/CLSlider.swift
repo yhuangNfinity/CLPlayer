@@ -30,7 +30,7 @@ class CLSlider: UISlider {
 
 private extension CLSlider {
     func initUI() {
-        let thumbImage = CLImageHelper.imageWithName("CLSlider")
+        let thumbImage = UIImage(named: "CLSlider")
         setThumbImage(thumbImage, for: .normal)
     }
 }

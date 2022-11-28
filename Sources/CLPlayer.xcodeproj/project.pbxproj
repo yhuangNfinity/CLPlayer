@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11A3DE9060FD8CD4516A2F1D /* libPods-CLPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4745977FFF79AB78FC9B13E /* libPods-CLPlayer.a */; };
 		5B2D28E32729446800E85A53 /* CLRotateAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D28E22729446800E85A53 /* CLRotateAnimationView.swift */; };
-		5B2D28E52729463800E85A53 /* CLPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B2D28E42729463800E85A53 /* CLPlayer.bundle */; };
 		5B2D28E72729468000E85A53 /* CLImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D28E62729468000E85A53 /* CLImageHelper.swift */; };
 		5B33B4DE2769EAA20086B402 /* CLPlayerConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33B4DD2769EAA20086B402 /* CLPlayerConfigure.swift */; };
 		5B33B4E02769F2990086B402 /* CLPlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33B4DF2769F2990086B402 /* CLPlayerDelegate.swift */; };
@@ -48,13 +46,11 @@
 		5BFADCBA276893B600A596A6 /* CLGCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFADCB9276893B600A596A6 /* CLGCDTimer.swift */; };
 		5BFADCC027689C5500A596A6 /* CLTableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFADCBF27689C5500A596A6 /* CLTableViewItem.swift */; };
 		5BFADCC227689C6300A596A6 /* CLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFADCC127689C6300A596A6 /* CLTableViewCell.swift */; };
+		FACE08022934AF9E008FFF63 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FACE08012934AF9E008FFF63 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A4B8371167B1ECA19BBA36A /* Pods-CLPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLPlayer.debug.xcconfig"; path = "Target Support Files/Pods-CLPlayer/Pods-CLPlayer.debug.xcconfig"; sourceTree = "<group>"; };
-		2FB9093F4F6D6B5B3B0E722C /* Pods-CLPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLPlayer.release.xcconfig"; path = "Target Support Files/Pods-CLPlayer/Pods-CLPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		5B2D28E22729446800E85A53 /* CLRotateAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLRotateAnimationView.swift; sourceTree = "<group>"; };
-		5B2D28E42729463800E85A53 /* CLPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CLPlayer.bundle; sourceTree = "<group>"; };
 		5B2D28E62729468000E85A53 /* CLImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLImageHelper.swift; sourceTree = "<group>"; };
 		5B33B4DD2769EAA20086B402 /* CLPlayerConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPlayerConfigure.swift; sourceTree = "<group>"; };
 		5B33B4DF2769F2990086B402 /* CLPlayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPlayerDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A3DE9060FD8CD4516A2F1D /* libPods-CLPlayer.a in Frameworks */,
+				FACE08022934AF9E008FFF63 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +165,6 @@
 				5BC41036276B188900DFE028 /* CLCollectionViewController */,
 				5BE1F3372727E55E0090F6C8 /* Resources */,
 				5BA39B152727D147005059F5 /* Products */,
-				D532A78DB1B29559F40D05B2 /* Pods */,
 				71D1838527540BD16A902F87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -192,7 +187,6 @@
 				5BFADCB9276893B600A596A6 /* CLGCDTimer.swift */,
 				5BFADCB72768936C00A596A6 /* CLPlayerContentView */,
 				5BFADCB82768937D00A596A6 /* CLFullScreenController */,
-				5B2D28E42729463800E85A53 /* CLPlayer.bundle */,
 			);
 			path = CLPlayer;
 			sourceTree = "<group>";
@@ -416,15 +410,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D532A78DB1B29559F40D05B2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2A4B8371167B1ECA19BBA36A /* Pods-CLPlayer.debug.xcconfig */,
-				2FB9093F4F6D6B5B3B0E722C /* Pods-CLPlayer.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -432,17 +417,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BA39B282727D148005059F5 /* Build configuration list for PBXNativeTarget "CLPlayer" */;
 			buildPhases = (
-				2B471BF233DE1590D288C7E9 /* [CP] Check Pods Manifest.lock */,
 				5BA39B102727D147005059F5 /* Sources */,
 				5BA39B112727D147005059F5 /* Frameworks */,
 				5BA39B122727D147005059F5 /* Resources */,
-				5B918B752727D7E2008355E5 /* SwiftFormat */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CLPlayer;
+			packageProductDependencies = (
+				FACE08012934AF9E008FFF63 /* SnapKit */,
+			);
 			productName = CLPlayer;
 			productReference = 5BA39B142727D147005059F5 /* CLPlayer.app */;
 			productType = "com.apple.product-type.application";
@@ -471,6 +457,9 @@
 				Base,
 			);
 			mainGroup = 5BA39B0B2727D147005059F5;
+			packageReferences = (
+				FACE08002934AF9E008FFF63 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 5BA39B152727D147005059F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -488,54 +477,10 @@
 				5BA39B242727D148005059F5 /* LaunchScreen.storyboard in Resources */,
 				5BA39B212727D148005059F5 /* Assets.xcassets in Resources */,
 				5BA39B1F2727D147005059F5 /* Main.storyboard in Resources */,
-				5B2D28E52729463800E85A53 /* CLPlayer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2B471BF233DE1590D288C7E9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CLPlayer-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5B918B752727D7E2008355E5 /* SwiftFormat */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftFormat;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" . --exclude Carthage,Pods --swiftversion \"5.0\" --disable unusedArguments\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BA39B102727D147005059F5 /* Sources */ = {
@@ -721,7 +666,6 @@
 		};
 		5BA39B292727D148005059F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A4B8371167B1ECA19BBA36A /* Pods-CLPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -751,7 +695,6 @@
 		};
 		5BA39B2A2727D148005059F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FB9093F4F6D6B5B3B0E722C /* Pods-CLPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -801,6 +744,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FACE08002934AF9E008FFF63 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FACE08012934AF9E008FFF63 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FACE08002934AF9E008FFF63 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5BA39B0C2727D147005059F5 /* Project object */;
 }

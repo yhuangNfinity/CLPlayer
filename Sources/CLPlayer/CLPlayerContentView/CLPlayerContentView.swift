@@ -84,7 +84,7 @@ class CLPlayerContentView: UIImageView {
 
     private lazy var backButton: UIButton = {
         let view = UIButton()
-        view.setImage(CLImageHelper.imageWithName("CLBack"), for: .normal)
+        view.setImage(UIImage(named: "CLBack"), for: .normal)
         view.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
         return view
     }()
@@ -96,23 +96,23 @@ class CLPlayerContentView: UIImageView {
 
     private lazy var moreButton: UIButton = {
         let view = UIButton()
-        view.setImage(CLImageHelper.imageWithName("CLMore"), for: .normal)
+        view.setImage(UIImage(named: "CLMore"), for: .normal)
         view.addTarget(self, action: #selector(moreButtonAction), for: .touchUpInside)
         return view
     }()
 
     private lazy var playButton: UIButton = {
         let view = UIButton()
-        view.setImage(CLImageHelper.imageWithName("CLPlay"), for: .normal)
-        view.setImage(CLImageHelper.imageWithName("CLPause"), for: .selected)
+        view.setImage(UIImage(named: "CLPlay"), for: .normal)
+        view.setImage(UIImage(named: "CLPause"), for: .selected)
         view.addTarget(self, action: #selector(playButtonAction(_:)), for: .touchUpInside)
         return view
     }()
 
     private lazy var fullButton: UIButton = {
         let view = UIButton()
-        view.setImage(CLImageHelper.imageWithName("CLFullscreen"), for: .normal)
-        view.setImage(CLImageHelper.imageWithName("CLSmallscreen"), for: .selected)
+        view.setImage(UIImage(named: "CLFullscreen"), for: .normal)
+        view.setImage(UIImage(named: "CLSmallscreen"), for: .selected)
         view.addTarget(self, action: #selector(fullButtonAction(_:)), for: .touchUpInside)
         return view
     }()
@@ -465,43 +465,43 @@ private extension CLPlayerContentView {
         loadingView.updateWithConfigure { $0.backgroundColor = self.config.loadingBackgroundColor }
 
         let backImage: UIImage? = {
-            guard let image = config.backImage else { return CLImageHelper.imageWithName("CLBack") }
+            guard let image = config.backImage else { return UIImage(named: "CLBack") }
             return image
         }()
         backButton.setImage(backImage, for: .normal)
 
         let moreImage: UIImage? = {
-            guard let image = config.moreImage else { return CLImageHelper.imageWithName("CLMore") }
+            guard let image = config.moreImage else { return UIImage(named: "CLMore") }
             return image
         }()
         moreButton.setImage(moreImage, for: .normal)
 
         let playImage: UIImage? = {
-            guard let image = config.playImage else { return CLImageHelper.imageWithName("CLPlay") }
+            guard let image = config.playImage else { return UIImage(named: "CLPlay") }
             return image
         }()
         playButton.setImage(playImage, for: .normal)
 
         let pauseImage: UIImage? = {
-            guard let image = config.pauseImage else { return CLImageHelper.imageWithName("CLPause") }
+            guard let image = config.pauseImage else { return UIImage(named: "CLPause") }
             return image
         }()
         playButton.setImage(pauseImage, for: .selected)
 
         let maxImage: UIImage? = {
-            guard let image = config.maxImage else { return CLImageHelper.imageWithName("CLFullscreen") }
+            guard let image = config.maxImage else { return UIImage(named: "CLFullscreen") }
             return image
         }()
         fullButton.setImage(maxImage, for: .normal)
 
         let minImage: UIImage? = {
-            guard let image = config.minImage else { return CLImageHelper.imageWithName("CLSmallscreen") }
+            guard let image = config.minImage else { return UIImage(named: "CLSmallscreen") }
             return image
         }()
         fullButton.setImage(minImage, for: .selected)
 
         let sliderImage: UIImage? = {
-            guard let image = config.sliderImage else { return CLImageHelper.imageWithName("CLSlider") }
+            guard let image = config.sliderImage else { return UIImage(named: "CLSlider") }
             return image
         }()
         sliderView.setThumbImage(sliderImage, for: .normal)
