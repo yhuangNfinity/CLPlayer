@@ -22,6 +22,5 @@ Pod::Spec.new do |s|
   s.resource     = 'CLPlayer/CLPlayer.bundle'
   s.requires_arc = true
   s.frameworks = 'UIKit','MediaPlayer'
-  s.dependency 'SnapKit'
 
 end
