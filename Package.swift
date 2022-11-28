@@ -13,7 +13,12 @@ let package = Package(
             targets: ["CLPlayer"]
         ),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(
+      name: "SnapKit",
+      url: "https://github.com/SnapKit/SnapKit",
+      "5.0.0" ..< "6.0.0"),
+    ],
     targets: [
         .target(
             name: "CLPlayer",
