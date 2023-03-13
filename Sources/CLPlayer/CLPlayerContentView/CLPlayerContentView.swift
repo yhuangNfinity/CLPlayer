@@ -162,9 +162,9 @@ class CLPlayerContentView: UIImageView {
         let view = UIButton()
         view.isHidden = true
         view.titleLabel?.font = .systemFont(ofSize: 14)
-        view.setTitle("加载失败,点击重试", for: .normal)
-        view.setTitle("加载失败,点击重试", for: .selected)
-        view.setTitle("加载失败,点击重试", for: .highlighted)
+        view.setTitle("Failed to load. Click try again", for: .normal)
+        view.setTitle("Failed to load. Click try again", for: .selected)
+        view.setTitle("Failed to load. Click try again", for: .highlighted)
         view.setTitleColor(.white, for: .normal)
         view.setTitleColor(.white, for: .selected)
         view.setTitleColor(.white, for: .highlighted)
